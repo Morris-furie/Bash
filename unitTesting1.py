@@ -11,7 +11,7 @@ class TestStringMethods(unittest.TestCase):
 
 	def test_isupper(self):
 		#this is what is going to be tested
-		sefl.assertTrue('FOO'.isupper())
+		self.assertTrue('FOO'.isupper())
 		self.assertFalse('Foo'.isupper())
 
 	def test_split(self):
@@ -26,4 +26,4 @@ class TestStringMethods(unittest.TestCase):
 			s.split(2)
 
 if __name__ == '__main__':
-	unittest.main()
+	unittest.main() #calliing the main function to make sure that the unit test runs appropriately. 
